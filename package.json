@@ -1,0 +1,30 @@
+{
+  "name": "learn-to-notion",
+  "version": "1.0.0",
+  "description": "Sync learning records to Notion and send weekly summaries to Feishu",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "learn-add": "./scripts/add-knowledge.js",
+    "learn-summary": "./scripts/weekly-summary.js"
+  },
+  "scripts": {
+    "add": "node scripts/add-knowledge.js",
+    "summary": "node scripts/weekly-summary.js",
+    "test": "node scripts/add-knowledge.js 测试术语 技术概念 这是测试 https://example.com"
+  },
+  "keywords": [
+    "notion",
+    "feishu",
+    "learning",
+    "knowledge-base",
+    "claude-code",
+    "skill"
+  ],
+  "author": "转转",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "dotenv": "^16.4.5"
+  }
+}
