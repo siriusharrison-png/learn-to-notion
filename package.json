@@ -11,6 +11,8 @@
   "scripts": {
     "add": "node scripts/add-knowledge.js",
     "summary": "node scripts/weekly-summary.js",
+    "sync": "node scripts/sync.js",
+    "pull": "node scripts/pull-from-notion.js",
     "test": "node scripts/add-knowledge.js 测试术语 技术概念 这是测试 https://example.com"
   },
   "keywords": [
