@@ -64,7 +64,8 @@ function formatWeeklySummary(knowledgeList) {
     content += `**${date}（${weekday}）**\n`;
 
     for (const item of items) {
-      content += `• ${item.term} - ${item.explanation}\n`;
+      const termDisplay = item.notionUrl ? `[${item.term}](${item.notionUrl})` : item.term;
+      content += `• ${termDisplay} - ${item.explanation}\n`;
     }
     content += '\n';
   }

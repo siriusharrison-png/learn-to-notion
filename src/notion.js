@@ -87,7 +87,8 @@ export async function getWeeklyKnowledge() {
       category: page.properties['分类']?.select?.name || '',
       explanation: page.properties['解释']?.rich_text?.[0]?.text?.content || '',
       link: page.properties['链接']?.url || '',
-      date: page.properties['添加日期']?.date?.start || ''
+      date: page.properties['添加日期']?.date?.start || '',
+      notionUrl: page.url || ''
     }));
   } catch (error) {
     console.error('获取本周知识失败:', error.message);
